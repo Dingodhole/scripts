@@ -41,7 +41,7 @@ $ffmpegPath = (Get-Command ffmpeg -ErrorAction SilentlyContinue)
 if (-not $ffmpegPath) {
     Write-Host "Error: FFmpeg is not installed or not available in the system's PATH."
     Write-Host "Please install FFmpeg using the following command:"
-    Write-Host "`winget install 'FFmpeg (Essentials Build)'`"
+    Write-Host "winget install 'FFmpeg (Essentials Build)'"
     exit 1
 }
 
